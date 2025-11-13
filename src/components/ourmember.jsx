@@ -15,7 +15,7 @@ export default function MemberSlider() {
 
   return (
     <section className="bg-gray-50 py-12">
-      <div className="max-w-6xl mx-auto px-6 shadow-xs shadow-blue-100 text-center">
+      <div className="max-w-6xl mx-auto px-6 shadow-xl shadow-blue-100 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Our Members</h2>
 
         <Swiper

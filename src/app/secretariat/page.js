@@ -9,7 +9,7 @@ export default function Secretariat() {
                 <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
                     IDMRB Secretariat
                 </h1>
-                <h2 className="text-center text-lg text-blue-600 font-medium mb-12">
+                <h2 className="text-center text-lg text-blue-800 font-medium mb-12">
                     Leadership | Integrity | Coordination | Vision
                 </h2>
 
@@ -27,7 +27,7 @@ export default function Secretariat() {
                         <h2 className="text-2xl font-semibold text-gray-800 mt-4">
                             Ms. Meenakshi Singh
                         </h2>
-                        <p className="text-blue-600 text-sm font-medium">
+                        <p className="text-blue-800 text-sm font-medium">
                             Secretary General – IDMRB
                         </p>
                     </div>
@@ -109,8 +109,8 @@ export default function Secretariat() {
 
                     <div className="text-center mt-6">
                         <p className="text-gray-700">
-                            📧 <a href="mailto:secretariat@idmrb.org" className="text-blue-600 underline">
-                                secretariat@idmrb.org
+                            📧 <a href="mailto:secretariat@idmrb.org" className="text-blue-800 underline">
+                                secretariat@idmrb.in
                             </a>
                         </p>
                         <p className="text-gray-700">📞 +91 9024209393</p>

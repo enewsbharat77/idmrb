@@ -13,7 +13,7 @@ export default function ContactPage() {
         <main className="bg-gray-50 min-h-screen py-12">
             <div className="max-w-5xl mx-auto px-6">
                 {/* Title */}
-                <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-700 mb-6">
+                <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6">
                     Contact Us | Indian Digital Media Regulatory Board (IDMRB)
                 </h1>
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
                                 General Queries:{" "}
                                 <a
                                     href="mailto:info@idmrb.in"
-                                    className="text-blue-600 hover:underline"
+                                    className="text-blue-800 hover:underline"
                                 >
                                     info@idmrb.in
                                 </a>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                                 Membership & Compliance:{" "}
                                 <a
                                     href="mailto:admin@idmrb.in"
-                                    className="text-blue-600 hover:underline"
+                                    className="text-blue-800 hover:underline"
                                 >
                                     admin@idmrb.in
                                 </a>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                                 Media & Outreach:{" "}
                                 <a
                                     href="mailto:press@idmrb.in"
-                                    className="text-blue-600 hover:underline"
+                                    className="text-blue-800 hover:underline"
                                 >
                                     press@idmrb.in
                                 </a>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                             <input
                                 type="text"
                                 required
-                                className="w-full border border-gray-300 rounded-md outline-0 p-2 focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-md outline-0 p-2 focus:ring-2 focus:ring-blue-800"
                             />
                         </div>
                         <div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                             </label>
                             <input
                                 type="text"
-                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-800"
                             />
                         </div>
                         <div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                             <input
                                 type="email"
                                 required
-                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-800"
                             />
                         </div>
                         <div>
@@ -146,7 +146,7 @@ export default function ContactPage() {
                             </label>
                             <input
                                 type="tel"
-                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-800"
                             />
                         </div>
                         <div className="md:col-span-2">
@@ -156,13 +156,13 @@ export default function ContactPage() {
                             <textarea
                                 required
                                 rows="5"
-                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-md p-2 outline-0 focus:ring-2 focus:ring-blue-800"
                             ></textarea>
                         </div>
                         <div className="md:col-span-2 text-center">
                             <button
                                 type="submit"
-                                className="bg-blue-600 text-white px-6 py-2 rounded-md outline-0 hover:bg-blue-700 transition"
+                                className="bg-blue-800 text-white px-6 py-2 rounded-md outline-0 hover:bg-blue-700 transition"
                             >
                                 Submit
                             </button>
@@ -189,7 +189,7 @@ export default function ContactPage() {
                             <a
                                 key={name}
                                 href={link}
-                                className="text-blue-600 font-medium hover:underline"
+                                className="text-blue-800 font-medium hover:underline"
                             >
                                 {name}
                             </a>

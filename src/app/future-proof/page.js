@@ -150,13 +150,13 @@ export default function NextMediaFrontier2026() {
                 <div className="bg-blue-50 rounded-2xl shadow-md p-8 text-center">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-3">For Partnerships & Participation</h2>
                     <p className="text-gray-700 mb-1">
-                        📧 <Link href="mailto:events@idmrb.org" className="text-blue-600 hover:underline">
-                            events@idmrb.org
+                        📧 <Link href="mailto:events@idmrb.org" className="text-blue-800 hover:underline">
+                            events@idmrb.in
                         </Link>
                     </p>
                     <p className="text-gray-700 mb-1">📞 +91 9024209393</p>
                     <p className="text-gray-700 mb-2">
-                        🌐 <Link href="https://www.idmrb.org" className="text-blue-600 hover:underline">www.idmrb.org</Link>
+                        🌐 <Link href="https://www.idmrb.in" className="text-blue-800 hover:underline">www.idmrb.org</Link>
                     </p>
                 </div>
             </div>

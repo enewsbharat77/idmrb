@@ -38,11 +38,11 @@ export const metadata = {
   authors: [{ name: "Indian Digital Media Regulatory Board (IDMRB)" }],
   creator: "IDMRB",
   publisher: "IDMRB",
-  metadataBase: new URL("https://www.idmrb.org"),
+  metadataBase: new URL("https://www.idmrb.in"),
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.idmrb.org",
+    url: "https://www.idmrb.in",
     title: "Indian Digital Media Regulatory Board (IDMRB)",
     description:
       "Empowering responsible journalism and ethical innovation in India's digital media ecosystem.",
@@ -69,7 +69,7 @@ export const metadata = {
     apple: "/favicon-new.ico",
   },
   alternates: {
-    canonical: "https://www.idmrb.org",
+    canonical: "https://www.idmrb.in",
   },
 };
 

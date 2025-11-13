@@ -9,7 +9,7 @@ export default function Footer() {
 
         {/* Logo & About */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-600 mb-3">IDMRB</h2>
+          <h2 className="text-2xl font-bold text-blue-800 mb-3">IDMRB</h2>
           <p className="text-sm leading-relaxed">
             idmrb - The Indian Digital Media Regulatory Board (IDMRB) is a self-regulatory body representing digital-first news organizations, working to ensure transparency, integrity, and professionalism across India’s digital media landscape.”
           </p>
@@ -17,7 +17,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold text-blue-600 mb-3">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-blue-800 mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/about" className="hover:text-blue-400">About Us</Link></li>
             <li><Link href="/events" className="hover:text-blue-400">Events</Link></li>
@@ -28,7 +28,7 @@ export default function Footer() {
 
         {/* Resources */}
         <div>
-          <h3 className="text-lg font-semibold text-blue-600 mb-3">Resources</h3>
+          <h3 className="text-lg font-semibold text-blue-800 mb-3">Resources</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/resources/blogs" className="hover:text-blue-400">Blogs</Link></li>
             <li><Link href="/resources/gallery" className="hover:text-blue-400">Gallery</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
 
         {/* Social Media */}
         <div>
-          <h3 className="text-lg font-semibold text-blue-600 mb-3">Follow Us</h3>
+          <h3 className="text-lg font-semibold text-blue-800 mb-3">Follow Us</h3>
           <div className="flex space-x-4">
             <Link href="#" className="hover:text-blue-400"><Facebook /></Link>
             <Link href="#" className="hover:text-blue-400"><Instagram /></Link>

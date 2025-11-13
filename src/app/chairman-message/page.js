@@ -22,7 +22,7 @@ export default function ChairmanMessage() {
                 </div>
 
                 {/* Quote Block */}
-                <blockquote className="bg-white rounded-2xl shadow-md p-8 mb-10 border-l-4 border-blue-600">
+                <blockquote className="bg-white rounded-2xl shadow-md p-8 mb-10 border-l-4 border-blue-800">
                     <p className="text-lg text-gray-700 italic mb-4">
                         “In every era, there are voices that echo beyond headlines — voices
                         that shape conscience, courage, and change. The future of Indian
@@ -127,7 +127,7 @@ export default function ChairmanMessage() {
                                 📧{' '}
                                 <Link
                                     href="mailto:chairman@idmrb.org"
-                                    className="text-blue-600 hover:underline"
+                                    className="text-blue-800 hover:underline"
                                 >
                                     chairman@idmrb.org
                                 </Link>
@@ -135,8 +135,8 @@ export default function ChairmanMessage() {
                             <p className="text-gray-700">
                                 🌐{' '}
                                 <Link
-                                    href="https://www.idmrb.org"
-                                    className="text-blue-600 hover:underline"
+                                    href="https://www.idmrb.in"
+                                    className="text-blue-800 hover:underline"
                                 >
                                     www.idmrb.org
                                 </Link>
@@ -146,7 +146,7 @@ export default function ChairmanMessage() {
                 </div>
 
                 {/* Closing Quote */}
-                <blockquote className="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl text-center text-gray-800 italic">
+                <blockquote className="mt-12 bg-blue-50 border-l-4 border-blue-800 p-6 rounded-xl text-center text-gray-800 italic">
                     “The future of journalism will not be built by algorithms — but by integrity.
                     Technology can amplify voices, but only ethics can make them heard.”
                     <br />

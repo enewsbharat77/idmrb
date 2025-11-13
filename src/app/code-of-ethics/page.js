@@ -33,7 +33,7 @@ export default function CodeOfEthics() {
 
       {/* Core Objectives */}
       <div className="mt-12">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
+        <h2 className="text-3xl font-semibold text-blue-800 mb-6">
           Core Objectives
         </h2>
         <ul className="list-decimal list-inside space-y-3">
@@ -97,7 +97,7 @@ export default function CodeOfEthics() {
           },
         ].map((item, i) => (
           <div key={i}>
-            <h3 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h3 className="text-2xl font-semibold text-blue-800 mb-3">
               {item.title}
             </h3>
             <p className="text-gray-700">{item.content}</p>
@@ -107,7 +107,7 @@ export default function CodeOfEthics() {
 
       {/* Ethical Philosophy */}
       <div className="mt-16">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-4">
+        <h2 className="text-3xl font-semibold text-blue-800 mb-4">
           Ethical Philosophy
         </h2>
         <p className="text-gray-700 leading-relaxed text-justify">
@@ -121,10 +121,10 @@ export default function CodeOfEthics() {
 
       {/* Contact */}
       <div className="mt-12 bg-white p-6 rounded-lg shadow-md border">
-        <h3 className="text-xl font-semibold text-blue-700 mb-3">
+        <h3 className="text-xl font-semibold text-blue-800 mb-3">
           For Compliance & Queries
         </h3>
-        <p>📧 <a href="mailto:ethics@idmrb.org" className="text-blue-600">ethics@idmrb.org</a></p>
+        <p>📧 <a href="mailto:ethics@idmrb.org" className="text-blue-800">ethics@idmrb.org</a></p>
         <p>📞 +91 9024209393</p>
         <p>🌐 Indian Digital Media Regulatory Board (IDMRB)</p>
       </div>
