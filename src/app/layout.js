@@ -65,8 +65,8 @@ export const metadata = {
     images: ["/og-image.jpg"],
   }, icons: {
     icon: "/favicon-new.ico",
-    shortcut: "/favicon.ico?",
-    apple: "/favicon.ico",
+    shortcut: "/favicon-new.ico",
+    apple: "/favicon-new.ico",
   },
   alternates: {
     canonical: "https://www.idmrb.org",
