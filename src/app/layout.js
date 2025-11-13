@@ -64,7 +64,7 @@ export const metadata = {
       "Building a transparent, ethical, and innovative digital media ecosystem for India.",
     images: ["/og-image.jpg"],
   }, icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon-new.ico",
     shortcut: "/favicon.ico?",
     apple: "/favicon.ico",
   },
