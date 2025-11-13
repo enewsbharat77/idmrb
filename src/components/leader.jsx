@@ -19,7 +19,7 @@ export default function LeadershipSection() {
       name: 'Mr. Arpit Dadhich',
       designation: 'General Secretary',
       position: 'Operations & Outreach',
-      image: '/leaders/leader3.jpg',
+      image: '/leaders/j3.jpeg',
     },
   ];
 
