@@ -42,14 +42,14 @@ export default function LeadershipSection() {
                   alt={leader.name}
                   width={160}
                   height={160}
-                  className="rounded-full object-cover w-full h-full border-4 border-blue-500"
+                  className="rounded-full object-cover w-full h-full border-2 border-blue-500"
                 />
               </div>
 
               <h3 className="text-xl font-semibold text-gray-800">
                 {leader.name}
               </h3>
-              <p className="text-blue-600 font-medium mt-1">
+              <p className="text-blue-800 font-medium mt-1">
                 {leader.designation}
               </p>
               <p className="text-gray-500 text-sm mt-2">

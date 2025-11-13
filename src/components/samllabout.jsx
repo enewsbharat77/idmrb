@@ -10,7 +10,7 @@ export default function AboutSection() {
                 </h2>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    The <span className="font-semibold text-blue-600">
+                    The <span className="font-bold text-blue-800">
                         Indian Digital Media Regulatory Board (IDMRB)
                     </span>{" "}
                     is a self-regulatory body formed under the framework of the{" "}
@@ -33,7 +33,7 @@ export default function AboutSection() {
 
                 <Link
                     href="/about"
-                    className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+                    className="inline-block bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
                 >
                     About Us →
                 </Link>

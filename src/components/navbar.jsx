@@ -26,7 +26,7 @@ export default function Navbar() {
     <nav className="bg-white border-b shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
         {/* Logo */}
-        <Link href="/" onClick={handleLinkClick} className="text-xl font-bold text-blue-600">
+        <Link href="/" onClick={handleLinkClick} className="text-xl font-bold text-blue-900">
           <Image
           src='/committees/idmrb-high-resolution-logo-transparent.png'
           alt='IDMRB Logo'

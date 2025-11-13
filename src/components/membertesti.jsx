@@ -70,7 +70,7 @@ export default function MemberTestimonialSlider() {
                   </p>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">{t.name}</h3>
-                    <p className="text-blue-600 font-medium">{t.designation}</p>
+                    <p className="text-blue-800 font-medium">{t.designation}</p>
                   </div>
                 </div>
               </div>

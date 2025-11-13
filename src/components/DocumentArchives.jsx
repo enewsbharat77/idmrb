@@ -39,7 +39,7 @@ export default function DocumentArchives() {
             >
               {/* Header */}
               <div>
-                <div className="flex items-center gap-2 mb-2 text-blue-600 font-semibold">
+                <div className="flex items-center gap-2 mb-2 text-blue-800 font-semibold">
                   <FileText className="w-5 h-5" />
                   <span>PDF Preview</span>
                 </div>
@@ -57,7 +57,7 @@ export default function DocumentArchives() {
               <Link
                 href={doc.link}
                 target="_blank"
-                className="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-lg text-center hover:bg-blue-700 transition-all duration-300"
+                className="inline-block bg-blue-800 text-white font-medium py-2 px-4 rounded-lg text-center hover:bg-blue-700 transition-all duration-300"
               >
                 View Document →
               </Link>
