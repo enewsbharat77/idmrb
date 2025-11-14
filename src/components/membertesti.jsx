@@ -27,13 +27,18 @@ export default function MemberTestimonialSlider() {
       designation: 'Managing Director (The Indian Express)',
       image: '/images/amit-verma.jpg',
       quote:
-        'As a member of DNPA, we appreciate its initiatives to engage with regulators and promote fair digital advertising ecosystems. It’s an important step toward ensuring growth for digital journalism in India.',
+        'As a member of DNPA, we appreciate its initiatives to engage with regulators and promote fair digital advertising ecosystems. It is an important step toward ensuring growth for digital journalism in India.',
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-16 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-10 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           What Our Members Have To Say About Us
@@ -66,7 +71,7 @@ export default function MemberTestimonialSlider() {
                 {/* Testimonial Content */}
                 <div className="w-full md:w-2/3 text-center md:text-left">
                   <p className="text-lg text-gray-700 italic leading-relaxed mb-6">
-                    “{t.quote}”
+                    "{t.quote}"
                   </p>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">{t.name}</h3>
@@ -78,6 +83,20 @@ export default function MemberTestimonialSlider() {
           ))}
         </Swiper>
       </div>
+
+      <style jsx>{`
+        @keyframes blob {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+      `}</style>
     </section>
   );
 }

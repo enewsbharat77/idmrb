@@ -32,8 +32,13 @@ export default function VideoGallerySlider() {
     ];
 
     return (
-        <section className="bg-gray-50 py-16">
-            <div className="max-w-6xl mx-auto px-6">
+        <section className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-16 relative overflow-hidden">
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+            </div>
+
+            <div className="max-w-6xl mx-auto px-6 relative z-10">
                 {/* Section Title */}
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
                     Video Gallery
@@ -82,6 +87,17 @@ export default function VideoGallerySlider() {
                     ))}
                 </Swiper>
             </div>
+
+            <style jsx>{`
+                @keyframes blob {
+                    0%, 100% { transform: translate(0, 0) scale(1); }
+                    33% { transform: translate(30px, -50px) scale(1.1); }
+                    66% { transform: translate(-20px, 20px) scale(0.9); }
+                }
+                .animate-blob {
+                    animation: blob 7s infinite;
+                }
+            `}</style>
         </section>
     );
 }

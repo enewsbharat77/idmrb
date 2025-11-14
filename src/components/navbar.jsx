@@ -27,12 +27,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
         {/* Logo */}
         <Link href="/" onClick={handleLinkClick} className="text-xl font-bold text-blue-900">
-          <Image
-          src='/committees/idmrb-high-resolution-logo-transparent.png'
-          alt='IDMRB Logo'
-          width={160}
-          height={40}
-          />
+          <div className='flex gap-2 items-center'>
+            <Image
+              src='/committees/logo3.png'
+              alt='IDMRB Logo'
+              width={50}
+              height={20}
+            />
+            <div className="w-px h-10 bg-gray-900 mx-2"></div>
+            <Image
+              src='/committees/logo.jpg'
+              alt='IDMRB Logo'
+              width={160}
+              height={40}
+            />
+          </div>
+
+
+
         </Link>
 
         {/* Desktop Menu */}
