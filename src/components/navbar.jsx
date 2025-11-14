@@ -60,13 +60,13 @@ export default function Navbar() {
               <ul className="absolute bg-white shadow-md mt-2 rounded-md w-52">
                 {[
                   ['About Us', '/about'],
-                  // ['Member', '/member'],
-                  // ['Founding Members', '/founder'],
-                  // ['Executive Committee', '/Executive'],
+                  ['Member', '/member'],
+                  ['Founding Members', '/founder'],
+                  ['Executive Committee', '/Executive'],
                   ['Committee', '/icommite'],
                   ['Chairman', '/chairman-message'],
                   ['Secretariat', '/secretariat'],
-                  // ['Media Center', '/about/media-center'],
+                  ['Media Center', '/about/media-center'],
                   ['Code of Ethics', '/code-of-ethics'],
                 ].map(([label, href]) => (
                   <li key={href}>
@@ -152,6 +152,16 @@ export default function Navbar() {
               className="hover:text-blue-600"
             >
               Contact Us
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/members"
+              onClick={handleLinkClick}
+              className="hover:text-blue-600"
+            >
+              Members
             </Link>
           </li>
         </ul>

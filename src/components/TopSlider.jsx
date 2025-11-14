@@ -7,14 +7,16 @@ import 'swiper/css/pagination';
 
 export default function ImageSlider() {
   const images = [
-    '/images/slide1.jpg',
-    '/images/slide2.jpg',
-    '/images/slide3.jpg',
-    '/images/slide4.jpg',
+    '/images/photo1.png',
+    '/images/photo2.png',
+    '/images/photo3.png',
+    '/images/photo4.png',
+    '/images/photo5.png',
+    '/images/photo6.png',
   ];
 
   return (
-    <div className="w-full flex justify-center items-center py-6">
+    <div className="w-full flex justify-center items-center py-2">
       <div className="w-[100%] ">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -23,14 +25,14 @@ export default function ImageSlider() {
           autoplay={{ delay: 3000 }}
           loop={true}
           spaceBetween={20}
-          className="rounded-2xl shadow-lg"
+          className=" shadow-lg"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-[250px] md:h-[450px] object-cover rounded-2xl"
+                className="w-full h-[600px] object-cover "
               />
             </SwiperSlide>
           ))}
