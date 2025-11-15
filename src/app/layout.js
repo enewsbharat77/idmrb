@@ -64,9 +64,9 @@ export const metadata = {
       "Building a transparent, ethical, and innovative digital media ecosystem for India.",
     images: ["/og-image.jpg"],
   }, icons: {
-    icon: "/favicon-new.ico",
-    shortcut: "/favicon-new.ico",
-    apple: "/favicon-new.ico",
+    icon: "/favicon-fin.ico",
+    shortcut: "/favicon-fin.ico",
+    apple: "/favicon-fin.ico",
   },
   alternates: {
     canonical: "https://www.idmrb.in",

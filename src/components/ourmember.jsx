@@ -35,7 +35,7 @@ export default function MemberSlider() {
         <Swiper
           modules={[Autoplay]}
           autoplay={{
-            delay: 2000,
+            delay: 1000,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -48,12 +48,12 @@ export default function MemberSlider() {
           }}
         >
           {members.map((logo, index) => (
-            <SwiperSlide key={index} className="flex justify-center items-center">
-              <div className="w-40 h-24 bg-white rounded-lg p-4 flex justify-center items-center shadow-sm">
+            <SwiperSlide key={index} className="flex gap-4 justify-center items-center">
+              <div className="w-52 h-32  rounded-lg p-4 flex justify-center items-center shadow-sm">
                 <img
                   src={logo}
                   alt={`Member ${index + 1}`}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full border-b border-r  shadow  shadow-blue-200 border-blue-200 object-contain"
                 />
               </div>
             </SwiperSlide>

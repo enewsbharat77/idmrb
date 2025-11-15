@@ -42,9 +42,6 @@ export default function Navbar() {
               height={40}
             />
           </div>
-
-
-
         </Link>
 
         {/* Desktop Menu */}
@@ -73,12 +70,12 @@ export default function Navbar() {
                 {[
                   ['About Us', '/about'],
                   ['Member', '/member'],
-                  ['Founding Members', '/founder'],
-                  ['Executive Committee', '/Executive'],
+                  // ['Founding Members', '/founder'],
+                  // ['Executive Committee', '/Executive'],
                   ['Committee', '/icommite'],
                   ['Chairman', '/chairman-message'],
                   ['Secretariat', '/secretariat'],
-                  ['Media Center', '/about/media-center'],
+                  // ['Media Center', '/about/media-center'],
                   ['Code of Ethics', '/code-of-ethics'],
                 ].map(([label, href]) => (
                   <li key={href}>
@@ -171,9 +168,9 @@ export default function Navbar() {
             <Link
               href="/members"
               onClick={handleLinkClick}
-              className="hover:text-blue-600"
+              className=" animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-blue-800  px-4 py-2 rounded-lg tracking-wide text-white"
             >
-              Members
+              Membersihp
             </Link>
           </li>
         </ul>
@@ -306,6 +303,16 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </li>
+            <li 
+            className="block px-4 py-3 ">
+            <Link
+              href="/members"
+              onClick={handleLinkClick}
+              className=" animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-blue-800  px-3 py-2 rounded-lg tracking-wide text-white"
+            >
+              Membersihp
+            </Link>
+          </li>
           </ul>
         </div>
       )}
