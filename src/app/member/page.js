@@ -4,41 +4,42 @@ import Image from "next/image";
 export default function Members() {
   const members = [
     {
+      name: "Santosh Sharma",
+      designation: "Executive Member",
+      position: "Editor, Voice of India",
+      image: "/images/member (0).png",
+    },
+    {
       name: "Pawan Gupta",
       designation: "President",
       position: "Chief Editor, The News Times",
-      image: "/images/member.jpg",
+      image: "/images/member (4).png",
     },
     {
       name: "Raghav Vaishnav",
       designation: "Vice President",
       position: "Managing Director, Digital Express",
-      image: "/images/members2.jpeg",
+      image: "/images/member (2).png",
     },
     {
-      name: "Vikas Mehta",
+      name: "Sanjay Gupta",
       designation: "Secretary",
       position: "Editor-in-Chief, Media Insight",
-      image: "/images/member3.jpg",
+      image: "/images/member (3).png",
     },
     {
-      name: "Priya Singh",
+      name: "Dhiraj Agarwal",
       designation: "Treasurer",
       position: "Head of Operations, NewsNow",
-      image: "/images/member4.jpg",
+      image: "/images/member (1).png",
     },
     {
-      name: "Amit Verma",
+      name: "Diksha Hembro",
       designation: "Executive Member",
       position: "CEO, Digital Bharat",
-      image: "/images/member5.jpg",
+      image: "/images/member (5).png",
     },
-    {
-      name: "Neha Gupta",
-      designation: "Executive Member",
-      position: "Editor, Voice of India",
-      image: "/images/member6.jpg",
-    },
+
   ];
 
   return (

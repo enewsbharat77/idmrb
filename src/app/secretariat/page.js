@@ -18,14 +18,14 @@ export default function Secretariat() {
                     {/* Left Section - Image & Basic Info */}
                     <div className="md:w-1/2 flex flex-col items-center text-center">
                         <Image
-                            src="/secretariat-meenakshi-singh.jpg"
-                            alt="Ms. Meenakshi Singh - Secretary General"
+                            src="/images/sec2.png"
+                            alt="Ms. Arpna Badagna - Secretary General"
                             width={500}
                             height={600}
                             className="w-full h-auto max-w-md rounded-md object-cover shadow-md"
                         />
                         <h2 className="text-2xl font-semibold text-gray-800 mt-4">
-                            Ms. Meenakshi Singh
+                            Ms. Arpna Badagna
                         </h2>
                         <p className="text-blue-800 text-sm font-medium">
                             Secretary General – IDMRB
@@ -43,7 +43,7 @@ export default function Secretariat() {
 
                         <p className="text-lg leading-relaxed mb-5">
                             Under the visionary leadership of{" "}
-                            <span className="font-semibold">Ms. Meenakshi Singh, Secretary General</span>,
+                            <span className="font-semibold">Ms. Arpna Badagna, Secretary General</span>,
                             the Secretariat ensures the effective implementation of IDMRB’s mission to uphold
                             transparency, accountability, and ethical governance within India’s rapidly evolving
                             digital media landscape.
@@ -73,7 +73,7 @@ export default function Secretariat() {
                         </ul>
 
                         <p className="text-lg leading-relaxed mt-5">
-                            Ms. Singh’s dynamic leadership is characterized by her commitment to building a{" "}
+                            Ms. Arpna Badagna dynamic leadership is characterized by her commitment to building a{" "}
                             <span className="font-semibold">transparent, inclusive, and forward-looking digital media environment</span>{" "}
                             that encourages responsible journalism and industry harmony.
                         </p>
@@ -98,7 +98,7 @@ export default function Secretariat() {
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-                        <p><strong>Name:</strong> Ms. Meenakshi Singh</p>
+                        <p><strong>Name:</strong> Ms. Arpna Badagna</p>
                         <p><strong>Designation:</strong> Secretary General</p>
                         <p><strong>Division:</strong> IDMRB Secretariat, New Delhi</p>
                         <p>

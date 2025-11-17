@@ -13,7 +13,7 @@ export default function FAQSection() {
     {
       question: "Who are the members?",
       answer:
-        "We comprise prominent digital publishers including Lokmat, Free Press Journal, Indian Express, Zee Media, Dainik Jagran, Eenadu, ABP Group, Indian TV, Mathrubhumi, Malayala Manorama, India Today, The Hindu, Dainik Bhaskar, Network 18, Times Internet, HT Digital, NDTV, The New Indian Express, The Mysore Printers, and Amar Ujala.",
+        "We comprise prominent digital publishers including eNews Bharat, Innovative News Network, eManage, Tv24, 7News Hd, News24, NewsNation, ATV News Channel and Many more...",
     },
     {
       question: "What are your key objectives?",

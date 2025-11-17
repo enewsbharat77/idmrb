@@ -9,25 +9,32 @@ export default function MemberTestimonialSlider() {
   // Testimonial Data
   const testimonials = [
     {
-      name: 'Senthil Chengalvarayan',
-      designation: 'Executive Director (NDTV)',
-      image: '/images/senthil-chengalvarayan.jpg',
+      name: 'Arvind Sharma',
+      designation: 'CEO, Bharat Digital Media Network',
+      image: '/images/testi1.jpg',
       quote:
-        'We are pleased to be a member of the Digital News Publication Association. As a platform dedicated to promoting the voices and interests of digital news publishers, DNPA helps to shape a fair, transparent, and ethical digital landscape. Its commitment to advocating for positive industry standards around issues like misinformation and brand safety is quite essential.',
+        '“In an era where digital content travels faster than facts, IDMRB has become the much–needed balancing force. Their guidance helps us maintain accountability, accuracy, and compliance without compromising innovation.IDMRB provides the clarity that every responsible digital publisher expects today.”',
     },
     {
-      name: 'Ritu Sharma',
-      designation: 'Editor-in-Chief (Times Digital)',
-      image: '/images/ritu-sharma.jpg',
+      name: 'Riya Malhotra',
+      designation: 'Chief Compliance Officer – NextWave Media Group',
+      image: '/images/test2.jpg',
       quote:
-        'DNPA plays a crucial role in uniting digital publishers under a common vision. Its efforts towards sustainable digital journalism and ethical practices are helping the entire industry move forward.',
+        'For digital publishers like us, IDMRB acts as a lighthouse — guiding us through policy updates, regulatory frameworks, and ethical best practices.Their support enables media houses to grow fearlessly while staying aligned with IT Rules 2021.It feels less like a regulator and more like a responsible partner working for the future of digital news.',
     },
     {
-      name: 'Amit Verma',
-      designation: 'Managing Director (The Indian Express)',
-      image: '/images/amit-verma.jpg',
+      name: 'Meenakshi Singh',
+      designation: 'Head of Regulatory Affairs — StreamBox OTT',
+      image: '/images/testi3.jpg',
       quote:
-        'As a member of DNPA, we appreciate its initiatives to engage with regulators and promote fair digital advertising ecosystems. It is an important step toward ensuring growth for digital journalism in India.',
+        'In the fast-evolving OTT landscape, IDMRB has been a steady and reliable guide.Their clear standards and supportive approach help platforms like ours stay compliant without compromising creativity.We value IDMRB’s balanced, modern, and industry-friendly framework.',
+    },
+    {
+      name: 'Karan Choudhary',
+      designation: `Managing Director, Janta's News Network`,
+      image: '/images/testi4.jpg',
+      quote:
+        '“IDMRB’s biggest strength is its neutrality and professionalism.Their guidelines have helped our newsroom improve transparency, fact-checking discipline, and grievance handling.For us, IDMRB is not just a regulatory board — it’s an ecosystem partner ensuring that digital news remains credible, responsible, and people-centric.”',
     },
   ];
 
@@ -52,7 +59,7 @@ export default function MemberTestimonialSlider() {
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          className="pb-12"
+          className="pb-12 shadow shadow-blue-200 border border-blue-200 rounded-2xl"
         >
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
@@ -64,7 +71,7 @@ export default function MemberTestimonialSlider() {
                     alt={t.name}
                     width={300}
                     height={300}
-                    className="rounded-2xl object-cover shadow-md"
+                    className="rounded-2xl h-96 object-cover shadow-md"
                   />
                 </div>
 
