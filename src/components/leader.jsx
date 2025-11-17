@@ -5,21 +5,21 @@ export default function LeadershipSection() {
   const leaders = [
     {
       name: 'Mr. Mukesh Dadhich',
-      designation: 'Founder & President',
+      designation: 'Chairman',
       position: 'Leadership & Vision',
       image: '/leaders/j2.jpg',
     },
     {
-      name: 'Mrs. Shruti Dadhich',
+      name: 'Mrs. Trishala Vaidyan',
       designation: 'Vice President',
       position: 'Strategy & Partnerships',
-      image: '/leaders/j4.jpg',
+      image: '/leaders/j0.jpeg',
     },
     {
-      name: 'Mr. Arpit Dadhich',
+      name: 'Mr. Navrishan Gogoi',
       designation: 'General Secretary',
       position: 'Operations & Outreach',
-      image: '/leaders/j3.jpeg',
+      image: '/leaders/j4.jpeg',
     },
   ];
 

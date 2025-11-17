@@ -13,6 +13,9 @@ export default function ImageSlider() {
     '/images/photo4.png',
     '/images/photo5.png',
     '/images/photo6.png',
+    '/images/photo7.png',
+    '/images/photo8.png',
+    '/images/photo9.png'
   ];
 
   return (

@@ -45,7 +45,7 @@ export default function ChairmanMessage() {
                         <div className="mt-4 text-center">
                             <h3 className="text-xl font-semibold text-gray-900">Mukesh S. Dadhich</h3>
                             <p className="text-gray-600 text-sm italic">
-                                Founder & Chairman, IDMRB
+                                Chairman, IDMRB
                             </p>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ export default function ChairmanMessage() {
                             <p className="text-gray-800 font-medium">With gratitude and determination,</p>
                             <p className="font-semibold text-gray-900 mt-2">Mukesh S. Dadhich</p>
                             <p className="text-gray-700 text-sm italic">
-                                Founder & Chairman, Indian Digital Media Regulatory Board (IDMRB)
+                                Chairman, Indian Digital Media Regulatory Board (IDMRB)
                             </p>
                             <p className="text-gray-700 mt-2">
                                 📧{' '}

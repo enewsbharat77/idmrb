@@ -14,6 +14,9 @@ export default function MembershipForm() {
         experience: "",
         workingWith: [],
         channelName: "",
+        brandName: "",
+        yearOfEstablishment: "",
+        turnover: "",
         totalExp: "",
         joiningFee: "",
         txnNumber: "",
@@ -38,10 +41,31 @@ export default function MembershipForm() {
         setForm({ ...form, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
+        
+        try {
+            // Send form data to API
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(form),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                setSubmitted(true);
+                setTimeout(() => setSubmitted(false), 3000);
+            } else {
+                alert('Failed to submit form. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('An error occurred. Please try again.');
+        }
     };
 
     return (
@@ -240,20 +264,66 @@ export default function MembershipForm() {
                             </h2>
 
                             <div className="space-y-6">
-                                {/* Experience */}
+                                {/* Brand Name */}
                                 <div>
                                     <label className="block text-sm font-semibold text-slate-900 mb-3">
-                                        Total Experience <span className="text-red-500">*</span>
+                                        Brand Name <span className="text-red-500">*</span>
                                     </label>
                                     <input
-                                        type="number"
-                                        name="experience"
+                                        type="text"
+                                        name="brandName"
                                         required
-                                        value={form.experience}
-                                        placeholder="Years of experience"
+                                        value={form.brandName}
+                                        placeholder="Your brand or company name"
                                         onChange={(e) => { handleChange(e); setCurrentStep(2); }}
                                         className="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 hover:border-purple-300"
                                     />
+                                </div>
+
+                                {/* Year of Establishment and Turnover */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-sm font-semibold text-slate-900 mb-3">
+                                            Year of Establishment <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            type="number"
+                                            name="yearOfEstablishment"
+                                            required
+                                            value={form.yearOfEstablishment}
+                                            placeholder="e.g., 2020"
+                                            min="1900"
+                                            max="2025"
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 hover:border-purple-300"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold text-slate-900 mb-3">
+                                            Annual Turnover <span className="text-red-500">*</span>
+                                        </label>
+                                        <select
+                                            name="turnover"
+                                            required
+                                            value={form.turnover}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 hover:border-purple-300 appearance-none cursor-pointer"
+                                            style={{
+                                                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                                                backgroundPosition: 'right 0.5rem center',
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundSize: '1.5em 1.5em',
+                                                paddingRight: '2.5rem'
+                                            }}
+                                        >
+                                            <option value="">Select Turnover Range</option>
+                                            <option value="1-10">₹1 Lakh to ₹10 Lakh</option>
+                                            <option value="10-50">₹10 Lakh to ₹50 Lakh</option>
+                                            <option value="50-100">₹50 Lakh to ₹1 Crore</option>
+                                            <option value="100-1000">₹1 Crore to ₹10 Crore</option>
+                                            <option value="1000+">₹10 Crore and Above</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 {/* Working With */}
@@ -261,8 +331,8 @@ export default function MembershipForm() {
                                     <label className="block text-sm font-semibold text-slate-900 mb-4">
                                         Media Experience <span className="text-red-500">*</span>
                                     </label>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                                        {["Electronic Media", "Print Media", "Web Media", "Social Media"].map((item) => (
+                                    <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                                        {["Electronic Media", "Print Media", "Web Media", "Social Media", "OTT Platform"].map((item) => (
                                             <label key={item} className="relative flex items-center gap-3 p-4 rounded-xl border-2 border-slate-200 bg-white hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50 hover:border-purple-300 cursor-pointer transition-all duration-300 group">
                                                 <input
                                                     type="checkbox"
@@ -318,16 +388,35 @@ export default function MembershipForm() {
                             </h2>
 
                             <div className="space-y-6">
-                                <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-5 shadow-sm">
-                                    <div className="flex items-start gap-3">
+                                {/* Bank Details Card */}
+                                <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-6 shadow-sm">
+                                    <div className="flex items-start gap-3 mb-4">
                                         <div className="flex-shrink-0 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
                                             <Sparkles className="w-5 h-5 text-white" />
                                         </div>
                                         <div>
                                             <p className="text-sm text-purple-900 font-semibold mb-1">Payment Instructions</p>
                                             <p className="text-sm text-purple-800">
-                                                Send joining fee via Paytm/Google Pay to <span className="font-mono font-bold text-purple-900 bg-white px-2 py-1 rounded">9024209393</span>
+                                                Send joining fee via Paytm/Google Pay or Bank Transfer
                                             </p>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Bank Details */}
+                                    <div className="bg-white rounded-xl p-4 space-y-3 border border-purple-100">
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            <div>
+                                                <p className="text-xs text-slate-600 font-medium mb-1">Bank Name</p>
+                                                <p className="text-sm font-bold text-slate-900">Kotak Mahindra Bank</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-xs text-slate-600 font-medium mb-1">Account Number</p>
+                                                <p className="text-sm font-mono font-bold text-slate-900 bg-purple-50 px-2 py-1 rounded">9024209393</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-slate-600 font-medium mb-1">IFSC Code</p>
+                                            <p className="text-sm font-mono font-bold text-slate-900 bg-purple-50 px-2 py-1 rounded inline-block">KKBK0003563</p>
                                         </div>
                                     </div>
                                 </div>
