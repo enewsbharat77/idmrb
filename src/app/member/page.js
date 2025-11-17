@@ -58,7 +58,7 @@ export default function Members() {
               className="bg-white shadow-md hover:shadow-lg rounded-xl overflow-hidden transition duration-300"
             >
               {/* Member Image */}
-              <div className="w-full h-96 relative">
+              <div className="w-full h-72 relative">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -75,7 +75,7 @@ export default function Members() {
                 <p className="text-blue-600 font-medium mt-1">
                   {member.designation}
                 </p>
-                <p className="text-gray-600 text-sm mt-2">{member.position}</p>
+                {/* <p className="text-gray-600 text-sm mt-2">{member.position}</p> */}
               </div>
             </div>
           ))}
