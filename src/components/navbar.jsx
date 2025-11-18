@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white border-b shadow-sm sticky top-0 z-50">
+    <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
         {/* Logo */}
         <Link href="/" onClick={handleLinkClick} className="text-xl font-bold text-blue-900">
@@ -303,16 +303,16 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </li>
-            <li 
-            className="block px-4 py-3 ">
-            <Link
-              href="/members"
-              onClick={handleLinkClick}
-              className=" animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-blue-800  px-3 py-2 rounded-lg tracking-wide text-white"
-            >
-              Membersihp
-            </Link>
-          </li>
+            <li
+              className="block px-4 py-3 ">
+              <Link
+                href="/members"
+                onClick={handleLinkClick}
+                className=" animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-blue-800  px-3 py-2 rounded-lg tracking-wide text-white"
+              >
+                Membersihp
+              </Link>
+            </li>
           </ul>
         </div>
       )}

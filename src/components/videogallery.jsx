@@ -9,21 +9,21 @@ export default function VideoGallerySlider() {
     // Video data
     const videos = [
         {
-            title: 'DNPA Conclave 2025: Media Transformations in the AI Age - Short Recording',
-            author: 'By DNPA Team',
+            title: 'IDMRB Conclave 2025: Media Transformations in the AI Age - Short Recording',
+            author: 'By IDMRB Team',
             date: 'Jul 07, 2025',
             thumbnail: '/images/video1.jpg',
             videoUrl: 'https://www.youtube.com/embed/XXXXXXXXXXX', // replace with actual video URL
         },
         {
-            title: 'DNPA Conclave 2025: Media Transformations in the AI Age - Recording',
+            title: 'IDMRB Conclave 2025: Media Transformations in the AI Age - Recording',
             author: 'By Raghav',
             date: 'Jun 20, 2025',
             thumbnail: '/images/video2.jpg',
             videoUrl: 'https://www.youtube.com/embed/YYYYYYYYYYY',
         },
         {
-            title: 'DNPA Conclave & Awards 2024: Content | Credibility | Catalyst - Recording',
+            title: 'IDMRB Conclave & Awards 2024: Content | Credibility | Catalyst - Recording',
             author: 'By Raghav',
             date: 'Jun 20, 2025',
             thumbnail: '/images/video3.jpg',
