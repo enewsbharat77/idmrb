@@ -7,6 +7,7 @@ import MemberSlider from "@/components/ourmember";
 import AboutSection from "@/components/samllabout";
 import ImageSlider from "@/components/TopSlider";
 import VideoGallerySlider from "@/components/videogallery";
+import TopStories from "@/components/TopStories";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
   <MemberSlider/>
   <LeadershipSection/>
   <CommitteesSection/>
+  <TopStories/>
   <DocumentArchives/>
   <MemberTestimonialSlider/>
   <VideoGallerySlider/>

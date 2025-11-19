@@ -43,7 +43,15 @@ export default function ContactPage() {
                         Reach Us At
                     </h2>
                     <p className="mb-2 font-medium text-gray-800">
-                        📍 <strong>Registered Office:</strong>
+                       📍 <strong>Head Office</strong>
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                        Corporate Office: 91, C Block Sector 10, Nodia - 201301 (Uttar Pradesh), India
+                    </p>
+
+
+                    <p className="mb-2 font-medium text-gray-800">
+                        📍 <strong>Regional Office:</strong>
                     </p>
                     <p className="text-gray-700 mb-4">
                         Indian Digital Media Regulatory Board (IDMRB) <br />

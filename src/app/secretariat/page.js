@@ -18,17 +18,17 @@ export default function Secretariat() {
                     {/* Left Section - Image & Basic Info */}
                     <div className="md:w-1/2 flex flex-col items-center text-center">
                         <Image
-                            src="/images/sec2.png"
+                            src="/images/sec3.png"
                             alt="Ms. Arpna Badagna - Secretary General"
                             width={500}
                             height={600}
-                            className="w-full h-auto max-w-md rounded-md object-cover shadow-md"
+                            className="w-full h-auto max-w-md rounded-2xl object-cover border-2  shadow-2xl"
                         />
                         <h2 className="text-2xl font-semibold text-gray-800 mt-4">
                             Ms. Arpna Badagna
                         </h2>
                         <p className="text-blue-800 text-sm font-medium">
-                            Secretary General – IDMRB
+                            Join Secretary – IDMRB
                         </p>
                     </div>
 
@@ -43,7 +43,7 @@ export default function Secretariat() {
 
                         <p className="text-lg leading-relaxed mb-5">
                             Under the visionary leadership of{" "}
-                            <span className="font-semibold">Ms. Arpna Badagna, Secretary General</span>,
+                            <span className="font-semibold">Ms. Arpna Badagna, Joint Secretary</span>,
                             the Secretariat ensures the effective implementation of IDMRB’s mission to uphold
                             transparency, accountability, and ethical governance within India’s rapidly evolving
                             digital media landscape.
@@ -99,7 +99,7 @@ export default function Secretariat() {
 
                     <div className="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
                         <p><strong>Name:</strong> Ms. Arpna Badagna</p>
-                        <p><strong>Designation:</strong> Secretary General</p>
+                        <p><strong>Designation:</strong> Joint Secretary</p>
                         <p><strong>Division:</strong> IDMRB Secretariat, New Delhi</p>
                         <p>
                             <strong>Core Functions:</strong> Strategic Operations | Policy

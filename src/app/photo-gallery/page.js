@@ -1,14 +1,13 @@
 export default function photogallery() {
     const images = [
-        '/images/photo1.png',
-        '/images/photo2.png',
-        '/images/photo3.png',
-        '/images/photo4.png',
+        '/images/image2.png',
+        '/images/image3.png',
+        '/images/image4.png',
+        '/images/image5.png',
         '/images/photo5.png',
         '/images/photo6.png',
-        '/images/photo2.png',
-        '/images/photo4.png',
-        '/images/photo1.png',
+        '/images/image6.png',
+        '/images/image7.png',
     ]
 
     return (

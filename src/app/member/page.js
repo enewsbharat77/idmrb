@@ -13,31 +13,31 @@ export default function Members() {
       name: "Pawan Gupta",
       designation: "President",
       position: "Chief Editor, The News Times",
-      image: "/images/member (4).png",
+      image: "/images/member (7).png",
     },
     {
       name: "Raghav Vaishnav",
       designation: "Vice President",
       position: "Managing Director, Digital Express",
-      image: "/images/member (2).png",
+      image: "/images/member2.png",
     },
     {
       name: "Sanjay Gupta",
       designation: "Secretary",
       position: "Editor-in-Chief, Media Insight",
-      image: "/images/member (3).png",
+      image: "/images/member3.png",
     },
     {
       name: "Dhiraj Agarwal",
       designation: "Treasurer",
       position: "Head of Operations, NewsNow",
-      image: "/images/member (1).png",
+      image: "/images/member1.png",
     },
     {
       name: "Diksha Hembro",
       designation: "Executive Member",
       position: "CEO, Digital Bharat",
-      image: "/images/member (5).png",
+      image: "/images/member5.png",
     },
 
   ];
@@ -63,7 +63,7 @@ export default function Members() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className="object-contain rounded-xl"
                 />
               </div>
 

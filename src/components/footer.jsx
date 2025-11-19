@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,9 +10,14 @@ export default function Footer() {
 
         {/* Logo & About */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-800 mb-3">IDMRB</h2>
+          <Image
+          src='/committees/logo.jpg'
+          alt='logo'
+          width={150}
+          height={70}
+          />
           <p className="text-sm leading-relaxed">
-            idmrb - The Indian Digital Media Regulatory Board (IDMRB) is a self-regulatory body representing digital-first news organizations, working to ensure transparency, integrity, and professionalism across India’s digital media landscape.”
+            IDMRB - The Indian Digital Media Regulatory Board (IDMRB) is a self-regulatory body representing digital-first news organizations, working to ensure transparency, integrity, and professionalism across India’s digital media landscape.”
           </p>
         </div>
 
@@ -19,9 +25,9 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-blue-800 mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/" className='hover:text-blue:400'>Home</Link></li>
             <li><Link href="/about" className="hover:text-blue-400">About Us</Link></li>
-            <li><Link href="/events" className="hover:text-blue-400">Events</Link></li>
-            <li><Link href="/resources" className="hover:text-blue-400">Resources</Link></li>
+            <li><Link href="/future-proof" className="hover:text-blue-400">Events</Link></li>
             <li><Link href="/contact" className="hover:text-blue-400">Contact</Link></li>
           </ul>
         </div>
@@ -30,9 +36,8 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-blue-800 mb-3">Resources</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/resources/blogs" className="hover:text-blue-400">Blogs</Link></li>
-            <li><Link href="/resources/gallery" className="hover:text-blue-400">Gallery</Link></li>
-            <li><Link href="/resources/faq" className="hover:text-blue-400">FAQ</Link></li>
+            <li><Link href="/photo-gallery" className="hover:text-blue-400">Gallery</Link></li>
+            <li><Link href="/faq" className="hover:text-blue-400">FAQ</Link></li>
           </ul>
         </div>
 
