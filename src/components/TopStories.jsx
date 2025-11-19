@@ -13,7 +13,7 @@ const TopStories = () => {
     {
       id: 2,
       title: "Mukesh Dadhich Appointed as the New Chairman of IDMRB — A Transformative Leader for India's Digital Media Future",
-      image: "/stories/storys1.jpg",
+      image: "/stories/sto1.jpg",
       slug: "mukesh-dadhich-new-chairman-idmrb"
     },
     {
