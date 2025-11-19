@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 const storiesData = {
   "government-supports-digital-shift-rajeev-chandrasekhar": {
     title: "Government Stands Ready to Support India's Digital Shift – Shri Rajeev Chandrasekhar at IDMRB Digital Media Conclave 2025",
-    image: "/stories/story1.jpg",
+    image: "/stories/story0.jpg",
     date: "2025",
     content: `The *IDMRB Digital Media Conclave 2025* brought together digital publishers, OTT platforms, policy experts, and media innovators from across the country to discuss the rapid transformation of India's news and content ecosystem. One of the highlights of the event was a special video address by *Shri Rajeev Chandrasekhar*, former Minister of State for Electronics & Information Technology and Skill Development, who shared his insights on the future of digital media and the responsibilities that come with it.
 
@@ -24,7 +24,7 @@ The *IDMRB Digital Media Conclave 2025* served as an important platform to refle
   },
   "mukesh-dadhich-new-chairman-idmrb": {
     title: "Mukesh Dadhich Appointed as the New Chairman of IDMRB — A Transformative Leader for India's Digital Media Future",
-    image: "/stories/story2.jpg",
+    image: "/stories/sto1.jpg",
     date: "11-11-25",
     content: `The Indian Digital Media Regulatory Board (IDMRB) has announced a significant leadership appointment that marks a new chapter for India's digital governance landscape. Mukesh Dadhich, a seasoned digital media strategist, journalist, and founder of one of Rajasthan's most dynamic news networks, has officially taken charge as the new Chairman of IDMRB. His appointment has been welcomed across the digital news ecosystem, signaling a strong and future-oriented direction for the Board.
 
@@ -40,7 +40,7 @@ With Mukesh Dadhich as Chairman, IDMRB is poised to play a historic role in shap
   },
   "idmrb-major-reforms-digital-media-mukesh-dadhich": {
     title: "IDMRB to Bring Major Reforms in India's Digital Media Landscape – Says Chairman Mukesh Dadhich",
-    image: "/stories/story3.jpg",
+    image: "/stories/sto3.jpg",
     date: "19-11-2025",
     content: `The Indian Digital Media Regulatory Board (IDMRB) is set to introduce a new era of transparency, accountability, and innovation in the country's rapidly expanding digital news and content ecosystem. Speaking about the future roadmap, newly appointed Chairman Mukesh Dadhich shared that IDMRB is ready to implement several transformative measures that will redefine how digital publishers, OTT platforms, and online newsrooms operate in India.
 
@@ -56,7 +56,7 @@ He concluded by asserting that IDMRB's mission is to empower digital creators, s
   },
   "idmrb-self-regulatory-body-mib-digital-media": {
     title: "IDMRB: A Self-Regulatory Body Under MIB, Strengthening India's Digital Media Framework",
-    image: "/stories/storys4.jpg",
+    image: "/stories/sto4.jpg",
     date: "19-11-2025",
     content: `India's digital ecosystem is expanding at a pace never seen before, with news portals, OTT platforms, and independent digital publishers becoming the primary source of information for millions. In this era of rapid transformation, the Ministry of Information & Broadcasting (MIB) has emphasized the need for responsible, ethical, and transparent digital publishing. In line with this vision, the Indian Digital Media Regulatory Board (IDMRB) has emerged as a structured self-regulatory body committed to guiding India's digital media sector towards credibility and accountability.
 
@@ -72,7 +72,7 @@ In the coming years, IDMRB intends to expand its network, strengthen its interna
   },
   "idmrb-new-benchmarks-responsible-digital-journalism": {
     title: "IDMRB Sets New Benchmarks for Responsible Digital Journalism in India",
-    image: "/stories/story5.jpg",
+    image: "/stories/sto5.jpg",
     date: "15-10-25",
     content: `The Indian Digital Media Regulatory Board (IDMRB) is emerging as one of India's most progressive self-regulatory bodies, shaping the future of digital journalism with a renewed focus on ethics, transparency, and accountability. As digital media continues to expand across OTT platforms, news portals, and independent publishers, IDMRB is setting new benchmarks to ensure that the digital information ecosystem remains credible and responsible.
 
@@ -90,7 +90,7 @@ Through its collaborative approach, IDMRB is building an ecosystem where publish
   },
   "idmrb-rural-digital-news-portals-membership": {
     title: "IDMRB to Open Doors for Rural Digital News Portals and Local OTT Platforms, Empowering Them Through Membership and Innovation Support",
-    image: "/stories/storys6.jpg",
+    image: "/stories/sto6.jpg",
     date: "11-11-25",
     content: `In a landmark initiative aimed at strengthening India's grassroots digital media ecosystem, the Indian Digital Media Regulatory Board (IDMRB) has announced that it will soon extend membership opportunities to small-town and rural digital news portals, hyperlocal media platforms, and emerging OTT creators. This move is expected to create a transformative shift for thousands of small digital publishers who operate from villages, tehsils, and district-level regions across the country.
 
@@ -106,7 +106,7 @@ By democratizing access to regulatory support, IDMRB is setting a powerful examp
   },
   "mukesh-dadhich-visionary-leader-digital-media": {
     title: "A New Wave of Energy Under Chairman Mukesh Dadhich: A Visionary Leader Redefining India's Digital Media Ecosystem",
-    image: "/stories/story7.jpg",
+    image: "/stories/sto7.jpg",
     date: "30 July 2025",
     content: `The Indian Digital Media Regulatory Board (IDMRB) has entered an exciting new era with the appointment of Mukesh Dadhich as its Chairman. Since assuming leadership, Dadhich has infused the organization with renewed energy, purpose, and direction. His arrival marks a significant milestone—not only for the Board, but for the entire digital media community across India.
 
@@ -162,11 +162,11 @@ export default async function StoryPage({ params }) {
               src={story.image}
               alt={story.title}
               fill
-              className="object-contain"
+              className="object-contain rounded-2xl"
             />
           </div>
 
-          <div className="p-8">
+          <div className="p-2">
             <p className="text-gray-500 text-sm mb-4">{story.date}</p>
             <h1 className="text-4xl font-bold text-gray-800 mb-6">
               {story.title}

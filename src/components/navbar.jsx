@@ -36,7 +36,7 @@ export default function Navbar() {
             />
             <div className="w-px h-10 bg-gray-900 mx-2"></div>
             <Image
-              src='/committees/logo.jpg'
+              src='/committees/logo1.png'
               alt='IDMRB Logo'
               width={160}
               height={40}

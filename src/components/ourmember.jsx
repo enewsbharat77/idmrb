@@ -5,26 +5,27 @@ import 'swiper/css';
 
 export default function MemberSlider() {
   const members = [
-    '/logos/logo1.jpeg',
+    '/logos/logo0.png',
     '/logos/inn.png',
-    '/logos/logo3.jpg',
-    '/logos/logo4.jpg',
-    '/logos/logo5.jpg',
-    '/logos/logo6.jpg',
-    '/logos/logo7.jpg',
-    '/logos/logo8.jpg',
-    '/logos/logo9.jpg',
-    '/logos/logo10.jpg',
-    '/logos/logo11.jpg',
-    '/logos/logo12.jpg',
-    '/logos/logo13.jpg',
+    '/logos/logo1.png',
+    '/logos/logo2.png',
+    '/logos/logo3.png',
+    '/logos/logo4.png',
+    '/logos/logo5.png',
+    '/logos/logo6.png',
+    '/logos/logo7.png',
+    '/logos/logo8.png',
+    '/logos/logo9.png',
+    '/logos/logo10.png',
+    '/logos/logo11.png',
+    '/logos/logo12.png',
     '/logos/logo14.jpg',
     '/logos/logo16.jpg',
     '/logos/logo17.jpg',
-    '/logos/logo18.jpg',
+    '/logos/logo18.png',
     '/logos/logo19.jpg',
-    '/logos/logo20.jpg',
-    '/logos/logo21.jpg',
+    '/logos/logo20.png',
+    '/logos/logo21.png'
   ];
 
   return (
@@ -75,7 +76,7 @@ export default function MemberSlider() {
                 <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 h-36 flex items-center justify-center overflow-hidden">
                   {/* Gradient overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-indigo-500/0 group-hover:from-blue-500/5 group-hover:to-indigo-500/5 rounded-2xl transition-all duration-300"></div>
-                  
+
                   <img
                     src={logo}
                     alt={`Member ${index + 1}`}
