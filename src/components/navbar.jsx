@@ -210,7 +210,7 @@ export default function Navbar() {
                 <ul className="bg-gray-50">
                   {[
                     ['About Us', '/about'],
-                    // ['Member', '/member'],
+                    ['Member', '/member'],
                     // ['Founding Members', '/founder'],
                     // ['Executive Committee', '/Executive'],
                     ['Committee', '/icommite'],
