@@ -25,7 +25,9 @@ export default function MemberSlider() {
     '/logos/logo18.png',
     '/logos/logo19.jpg',
     '/logos/logo20.png',
-    '/logos/logo21.png'
+    '/logos/logo21.png',
+    '/logos/logo22.png',
+    '/logos/logo23.png'
   ];
 
   return (
