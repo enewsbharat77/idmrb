@@ -28,13 +28,13 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" onClick={handleLinkClick} className="text-xl font-bold text-blue-900">
           <div className='flex gap-2 items-center'>
-            <Image
+            {/* <Image
               src='/committees/logo3.png'
               alt='IDMRB Logo'
               width={50}
               height={20}
             />
-            <div className="w-px h-10 bg-gray-900 mx-2"></div>
+            <div className="w-px h-10 bg-gray-900 mx-2"></div> */}
             <Image
               src='/committees/logo1.png'
               alt='IDMRB Logo'
