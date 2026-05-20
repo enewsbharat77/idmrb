@@ -170,7 +170,7 @@ export default function Navbar() {
               onClick={handleLinkClick}
               className=" animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-blue-800  px-4 py-2 rounded-lg tracking-wide text-white"
             >
-              Membersihp
+              Membership
             </Link>
           </li>
         </ul>
